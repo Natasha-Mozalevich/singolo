@@ -1,0 +1,253 @@
+/* Обнуление */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper{
+  width: 1020px;
+}
+
+/* header */
+header {
+  background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+}
+
+.header-wrapper {
+  /* width: 100%; */
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-items: center;
+  /* border: 2px solid crimson; */
+}
+
+.icon-burger {
+  display: none;
+  margin-left: 40px;
+  margin-top: 29px;
+}
+
+h1 {
+  padding-top: 29px;
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.logo-symbol {
+  color: #f06c64;
+}
+
+.top-navmenu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14.4px;
+  font-weight: 700;
+}
+
+.top-navmenu {
+  padding: 29px 40px 25px 0;
+}
+
+.top-navmenu li {
+  display: inline-block;
+}
+
+/* Почему это не работает? */
+.top-navmenu li:first-child a {
+  color: #f06c64;
+}
+
+.top-navmenu li span {
+  padding: 0 5px;
+}
+
+.top-navmenu a:hover {
+  color: #f06c64;
+}
+
+.top-navmenu a:active {
+  background-color: #ffffff;
+}
+
+/* _____Меню для смартфонов___________ */
+.top-navmenu-mobile {
+  padding-left: 60px;
+  display: none;
+}
+
+.top-navmenu-mobile a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.top-navmenu-mobile li:first-child {
+  color: #f06c64;
+}
+
+.top-navmenu-mobile a:hover {
+  color: #f06c64;
+}
+
+.top-navmenu-mobile a:active {
+  background-color: #ffffff;
+}
+/* ________Конец Меню для смартфонов_________ */
+
+/* section Services */
+.services {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+.services-wrapper {
+  /* width: 100%; */
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 25px 40px;
+}
+
+
+h2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #666d89;
+}
+
+.services-header-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  overflow: auto;
+}
+/* Карточки */
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  display: flex;
+  padding-top: 20px;
+  }
+
+.card-content {
+  margin-left: 20px;
+  display: inline-block;
+  width: 70%;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #666d89;
+}
+
+.card-description {
+  font-size: 12;
+  line-height: 22px;
+  color: #666d89;
+  overflow: auto;
+}
+/* Конец карточек */
+
+/* section Portfolio */
+
+.portfolio{
+width: 100%;
+background-color: #2d303a;
+}
+
+.portfolio-wrapper{
+width: 100%;
+max-width: 1020px;
+margin: 0 auto;
+padding: 25px; 40px;
+}
+
+.portfolio-tags-button {
+  font-size: 12px;
+  text-align: center;
+  color: #767e9e;
+  background: #2d303a;
+  border: 1px solid #767e9e;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-items: center;
+}
+.portfolio-image {
+  display: inline-block;
+  width: 25%;
+  padding-top: 20px;
+}
+
+/* Адаптив для планшетов */
+@media screen and (max-width: 768px) {
+
+.wrapper{
+  width: 100%;
+}
+
+  .top-navmenu-mobile {
+    display: none;
+  }
+
+  .card{ 
+  width: 50%;
+}
+.portfolio-image{
+  width: 30%;
+}
+}
+
+/* Адаптив для смартфонов */
+@media screen and (max-width: 375px) {
+  
+  .top-navmenu {
+    display: none;
+  }
+
+  .top-navmenu-mobile {
+    display: none;
+  }
+
+  .icon-burger {
+    display: block;
+  }
+  .services-container {
+flex-direction: column;
+height: 100%;
+  }
+
+  .portfolio-container {
+    flex-direction: column;
+  }
+}
