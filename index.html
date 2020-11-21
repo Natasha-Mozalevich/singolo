@@ -3,79 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Singolo</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>The Sun SINGOLO</title>
   </head>
   <body>
-    <header>
-      <!-- _________________иконка и мобильное меню___________ -->
-      <div class="header-wrapper wrapper">
-        <div class="icon-burger-show">&#8801;</div>
-        <div class="icon-burger-hide">&#8801;+</div>
-
-        <div class="show">
-          <ul>
-            <li><a href="#home">HOME</a></li>
-            <li>
-              <a href="#services">SERVICES</a>
-            </li>
-            <li>
-              <a href="#portfolio">PORTFOLIO</a>
-            </li>
-            <li>
-              <a href="#portfolio">ABOUT</a>
-            </li>
-            <li>
-              <a href="#contacts">CONTCTACT</a>
-            </li>
-          </ul>
-        </div>
-        <!-- __________________логотип и меню________________ -->
-        <h1>SINGOLO<span class="logo-symbol">*</span></h1>
-        <ul class="top-navmenu">
-          <li><a href="">HOME</a></li>
-          <li><span>&#183;</span><a href="#services">SERVICES</a></li>
-          <li><span>&#183;</span><a href="#portfolio">PORTFOLIO</a></li>
-          <li><span>&#183;</span><a href="#port">ABOUT</a></li>
-          <li><span>&#183;</span><a href="">CONTCTACT</a></li>
-        </ul>
-      </div>
-    </header>
-    <!-- Slider -->
-    <div class="slider-wrapper" id="slider">
+    <header class="header">
       <div class="wrapper">
-        <div class="slider-wrapper-content">
-          <div class="arrow">
-            <div class="arrow-left">
-              <img src="elements/arrow-left.png" alt="arrow-left" />
-            </div>
-            <div class="arrow-right">
-              <img src="elements/arrow-right.png" alt="arrow-right" />
+        <div class="header-wrapper">
+          <!-- __________ mobile group___________ -->
+          <div class="mobile-menu-show-container">
+            <div class="mobile-menu-show-item">
+              <a href="#home">HOME</a>
+              <a href="#services">SERVICES</a>
+              <a href="#portfolio">PORTFOLIO</a>
+              <a href="#portfolio">ABOUT</a>
+              <a href="#contacts">CONTCTACT</a>
             </div>
           </div>
+          <!-- ________________ -->
 
-          <div class="phone-container">
-            <div class="phone-vertical-container">
-              <img src="elements/phone-vertical-shadow.png" alt="" />
-              <img src="elements/phone-vertical.png" alt="" />
-              <img src="elements/phone-vertical-display.png" alt="" />
-            </div>
+          <div class="mobile-menu-icon-show">&#8801;</div>
+          <div class="logo">
+            <h1>SINGOLO<span class="logo-symbol">*</span></h1>
+          </div>
+          <div class="top-navmenu-container">
+            <ul class="top-navmenu">
+              <li><a href="">HOME</a></li>
+              <li><span>&#183;</span><a href="#services">SERVICES</a></li>
+              <li><span>&#183;</span><a href="#portfolio">PORTFOLIO</a></li>
+              <li><span>&#183;</span><a href="#portfolio">ABOUT</a></li>
+              <li><span>&#183;</span><a href="#footer">CONTCTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
-            <div class="phone-horizontal-container">
-              <img src="elements/phone-horizontal-shadow.png" alt="" />
-              <img src="elements/phone-horizontal.png" alt="" />
-              <img src="elements/phone-horizontal-display.png" alt="" />
-            </div>
+    <!-- ________________________ Slider start __________________ -->
+
+    <div class="slider-red">
+      <div class="wrapper">
+        <div class="slider-container">
+          <!-- _______________________ -->
+          <div class="phone-vertical-container">
+            <img src="elements/phone-vertical-shadow.png" alt="" />
+            <img src="elements/phone-vertical.png" alt="" />
+            <img src="elements/phone-vertical-display.png" alt="" />
+          </div>
+
+          <!-- ___________________________ -->
+          <div class="phone-horizontal-container">
+            <img src="elements/phone-horizontal-shadow.png" alt="" />
+            <img src="elements/phone-horizontal.png" alt="" />
+            <img src="elements/phone-horizontal-display.png" alt="" />
           </div>
         </div>
       </div>
     </div>
+    <!-- _________________________ -->
+    <div class="slider-blue">
+      <div class="wrapper">
+        <div class="slider-container-blue">
+          <!-- _______________________ -->
+          <div class="phone-vertical-container">
+            <img src="elements/phone-vertical-shadow.png" alt="" />
+            <img src="elements/phone-vertical.png" alt="" />
+            <img src="elements/phone-vertical-display.png" alt="" />
+          </div>
+          <!-- ______________________________ -->
+          <div class="phone-vertical-container">
+            <img src="elements/phone-vertical-shadow.png" alt="" />
 
-    <!-- Services-->
+            <img src="elements/phone-vertical.png" alt="" />
+
+            <img src="elements/phone-vertical-display-green.png" alt="" />
+          </div>
+
+          <div class="phone-vertical-container">
+            <img src="elements/phone-vertical-shadow.png" alt="" />
+            <img src="elements/phone-vertical.png" alt="" />
+            <img src="elements/phone-vertical-display.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- _____________ Стррелки_____________________ -->
+    <div class="arrows">
+      <div class="arrow-left">
+        <img src="elements/arrow-left.png" alt="arrow-left" />
+      </div>
+      <div class="arrow-right">
+        <img src="elements/arrow-right.png" alt="arrow-right" />
+      </div>
+    </div>
+    <!-- ______________Конец слайдера___________________ -->
+
+    <!-- _____________________________ Services start_________________ -->
     <div class="services-wrapper" id="services">
       <div class="wrapper">
         <h2>Our Services</h2>
@@ -85,7 +112,6 @@
           lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
           tortor mauris condimentum nibh.
         </p>
-
         <!-- Карточки -->
         <div class="services-container">
           <div class="card">
@@ -182,50 +208,74 @@
         <!-- Конец карточек -->
       </div>
     </div>
-    <!-- Portfolio -->
-    <div class="portfolio-wrapper" id="portfolio">
-  <div class="wrapper">
-    <h2>Portfolio</h2>
-    <p class="services-header-text">
-      Duis mollis, est non commodo luctus, nisi erat lacinia odio sem nec
-      elit.  
-    <p>
-    
-      <div class="tags">
-        <button type="button" class="portfolio-tags-button">All</button>
-        <button type="button" class="portfolio-tags-button">
-        Web Design
-        </button>
-        <button type="button" class="portfolio-tags-button">
-        Graphic Design
-        </button>
-        <button type="button" class="portfolio-tags-button">Artwork</button>
-        </div>
-    
-    
-      <!-- Картинки -->
-    <div class="portfolio-container">
+    <!-- _____________________________ End of the Services _________________ -->
 
-      <img src="img/portfolio-1.png" alt="portfolio-1.png" width="220" height="187">
-      <img src="img/portfolio-2.png" alt="portfolio-2.png" width="220" height="187">
-      <img src="img/portfolio-3.png" alt="portfolio-3.png" width="220" height="187">
-      <img src="img/portfolio-4.png" alt="portfolio-4.png" width="220" height="187">
-      <img src="img/portfolio-5.png" alt="portfolio-5.png" width="220" height="187">
-      <img src="img/portfolio-6.png" alt="portfolio-6.png" width="220" height="187">
-      <img src="img/portfolio-7.png" alt="portfolio-7.png" width="220" height="187">
-      <img src="img/portfolio-8.png" alt="portfolio-8.png" width="220" height="187">
-      <img src="img/portfolio-9.png" alt="portfolio-9.png" width="220" height="187">
-      <img src="img/portfolio-10.png" alt="portfolio-10.png" width="220" height="187">
-      <img src="img/portfolio-11.png" alt="portfolio-11.png" width="220" height="187">
-      <img src="img/portfolio-12.png" alt="portfolio-12.png" width="220" height="187">  
-      
-      </div>
+    <!-- _____________________________ Portfolio start_________________ -->
+    <div class="portfolio-wrapper" id="portfolio">
+      <div class="wrapper">
+        <h2>Portfolio</h2>
+        <p class="services-header-text">
+          Duis mollis, est non commodo luctus, nisi erat lacinia odio sem nec
+          elit.
+        </p>
+        <div class="tags">
+          <button type="button" class="portfolio-tags-button">All</button>
+          <button type="button" class="portfolio-tags-button">
+            Web Design
+          </button>
+          <button type="button" class="portfolio-tags-button">
+            Graphic Design
+          </button>
+          <button type="button" class="portfolio-tags-button">Artwork</button>
+        </div>
+
+        <!-- Картинки -->
+        <div class="grid">
+          <div class="portfolio-container">
+            <div class="portfolio-item">
+              <img src="img/portfolio-1.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-2.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-3.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-4.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-5.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-6.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-7.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-8.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-9.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-10.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-11.png" alt="" />
+            </div>
+            <div class="portfolio-item">
+              <img src="img/portfolio-12.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- Конец картинок -->
       </div>
     </div>
-    <!-- Конец карточек -->
-  </div>
-</div>
-<!-- Footer -->
+    <!-- _____________________________ End of the Portfolio _________________ -->
+
+    <!-- _____________________________ Footer start_________________ -->
     <div class="footer-wrapper" id="footer">
       <div class="wrapper">
         <div class="footer-content-wrapper">
@@ -260,6 +310,7 @@
         </div>
       </div>
     </div>
+    <!-- _____________________________ End of the Footer _________________ -->
 
     <script src="script.js"></script>
   </body>

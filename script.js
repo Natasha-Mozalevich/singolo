@@ -1,38 +1,37 @@
-// const menu = document.querySelector(".top-navmenu-mobile");
-// const menuButton = document.querySelector(".icon-burger");
-//
-// menuButton.addEventListener("click", () => {
-// console.log("click");
-// menu.style.display = "block";
+const menu = document.querySelector(".mobile-menu-show-container");
+const menuButton = document.querySelector(".mobile-menu-icon-show");
+
+menuButton.addEventListener("click", () => {
+  menu.classList.toggle("show");
+});
+
+// _______________Slider____________________
+const arrowLeft = document.querySelector(".arrow-left");
+const arrowRight = document.querySelector(".arrow-right");
+const sliderRed = document.querySelector(".slider-red");
+const sliderBlue = document.querySelector(".slider-blue");
+const sliderMove = document.querySelector("slider-move");
+
+// arrowLeft.addEventListener("click", () => {
+// sliderRed.style.display = "none";
+// sliderBlue.style.display = "block";
 // });
 //
-// console.log(menuButton);
-//
-
-// _______________________________
-// const mobileMenu = document.querySelector(".show");
-// const menuButtonShow = document.querySelector(".icon-burger-show");
-// const menuButtonHide = document.querySelector(".icon-burger-hide");
-//
-// menuButtonShow.addEventListener("click", () => {
-// mobileMenu.classList.toggle("top-navmenu-mobile");
-// mobileMenu.
+// arrowRight.addEventListener("click", () => {
+// sliderRed.style.display = "block";
+// sliderBlue.style.display = "none";
 // });
-//
-//
 
-// Это верный код
-// ____________________________________
+if ((sliderRed.style.display = "block")) {
+  arrowRight.addEventListener("click", () => {
+    sliderRed.style.display = "none";
+    sliderBlue.style.display = "block";
+  });
+}
 
-const mobileMenu = document.querySelector(".show");
-const menuButtonShow = document.querySelector(".icon-burger-show");
-const menuButtonHide = document.querySelector(".icon-burger-hide");
-//
-menuButtonShow.addEventListener("click", () => {
-  mobileMenu.classList.add("top-navmenu-mobile");
-});
-//
-menuButtonHide.addEventListener("click", () => {
-  mobileMenu.classList.remove("top-navmenu-mobile");
-});
-//
+if ((sliderRed.style.display = "block")) {
+  arrowLeft.addEventListener("click", () => {
+    sliderRed.style.display = "none";
+    sliderBlue.style.display = "block";
+  });
+}
